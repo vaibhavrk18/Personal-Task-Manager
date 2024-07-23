@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="title">Personal Task Manager</h2>
+
+    <div class="form-group">
+        <label for="taskName">Task Name:</label>
+        <input type="text" id="taskName" class="input-text">
+    </div>
+    <div class="form-group">
+        <label for="taskDate">Due Date:</label>
+        <input type="date" id="taskDate" class="input-date">
+    </div>
+    <button onclick="addTask()" class="btn">Add Task</button>
+    <button onclick="clearTasks()" class="btn">Clear All Tasks</button>
+    <div class="tasks" id="tasks"></div>
+
+    <hr>
+
+    <h2 class="title">Date Information</h2>
+    <button onclick="showDateInfo()" class="btn">Show Date Info</button>
+    <div class="date-info" id="dateInfo"></div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
